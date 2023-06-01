@@ -1,0 +1,40 @@
+{
+    "user" : {
+        "fullName": "Musa Baloyi",
+        "photo" : "musa.jpg"
+    },
+    "city" : {
+        "name" : "Johannesburg",
+        "photo" : "simon-hurry-_h-L45TSmGM-unsplash.jpg",
+        "description" : "Johannesburg is the largest city in South Africa and is known as the economic powerhouse of the country. Located in the northeastern part of the country, it serves as the capital of the Gauteng province. Johannesburg, often referred to as Jo'burg or Jozi, has a rich history and cultural diversity."
+    },
+    "foreignLanguage" : {
+        "language" : "French",
+        "phrases" : [{
+            "englishPhrase" : "Hello",
+            "foreignLanguage" : "Bonjour"
+        },
+        {
+            "englishPhrase" : "Where you from",
+            "foreignLanguage" : "D'où viens-tu"
+        },
+        {
+            "englishPhrase" : "I am in bliss",
+            "foreignLanguage" : "Je suis en extase"
+        }]
+    },
+    "favouriteSubjects" : [
+        {
+            "name" : "Maths",
+            "description" : "Deals with numbers and calculations"
+        },
+        {
+            "name" : "Control Systems Engineering",
+            "description" : "Deals with controlling the systems ideally reaching the stability"
+        },
+        {
+            "name" : "Chemistry",
+            "description" : "Mixing of chemicals to get a chemical reaction"
+        }
+    ]
+}

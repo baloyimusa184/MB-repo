@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+     <style>
+        body {
+          background-image: url("dominik-schroder-FIKD9t5_5zQ-unsplash.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        @keyframes slideLeft {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+    .slide-text {
+      animation: slideLeft 2s ease-in-out infinite;
+    }
+      </style>
+             
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="slide-text"><p style="color: rgb(31, 106, 219); font-size: 40px;">Introduction</p></h1>
+        <div class="row">
+            <img class="responsive-img" src="{{data.user.photo}}"  width="400" height="300"> 
+        <div class="col s6"><p style="color: rgb(2, 10, 22); font-size: 40px;">{{data.user.fullName}}</p></div>
+        </div>
+      </div>
+      
+
+        <div class="container">
+            <h1 class="slide-text"><p style="color: rgb(31, 106, 219); font-size: 40px;">About The City</p></h1>
+        <br>
+       
+        <div class="row">
+            <img class="responsive-img" src="{{data.city.photo}}"  width="400" height="300"> 
+        <div class="col s6">{{data.city.description}}</div>
+        </div>
+      </div>
+     
+      <section>
+      <div class="container">
+        <h1 class="slide-text"><p style="color: rgb(31, 106, 219); font-size: 40px;">Foreign Language Translation</p></h1>
+       <br>
+       
+        <table>
+            <thead>
+              <tr>
+                  <th>English Phrase</th>
+                  <th>Foreign Language</th>
+              </tr>
+            </thead>
+    {{#each data.foreignLanguage.phrases}}
+            <tbody>
+              <tr>
+                <td>{{englishPhrase}}</td>
+                <td>{{foreignLanguage}}</td>
+              </tr>
+            </tbody>
+            {{/each}}
+          </table>               
+      </div>
+      </section>
+    
+<section>
+<br>
+<br>
+<br>
+    <div class="container">
+        <h1 class="slide-text"><p style="color: rgb(31, 106, 219); font-size: 40px;">My Favourite Subjects</p></h1>
+
+<div class="row">
+    {{#each data.favouriteSubjects}}
+    <div class="col s6">{{name}}</div>
+    <div class="col s6">{{description}}</div>
+    {{/each}}
+  </div>
+    </div>
+</section>
+</section>
+</body>
+</html>
